@@ -1,4 +1,4 @@
-# Day 2 — 2026-11-25 — A short, spoiler-free excerpt
+# Day 2 — 2026-11-26 — A short, spoiler-free excerpt
 
 
 **Seed:** The fog comes in off the Pacific the way it always does, without asking.

@@ -1,4 +1,4 @@
-# Day 22 — 2026-12-15 — A short, spoiler-free excerpt
+# Day 22 — 2026-12-16 — A short, spoiler-free excerpt
 
 
 **Seed:** "It works the way a rumor works. It spreads, and eventually someone gets burned."

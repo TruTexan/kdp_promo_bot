@@ -1,4 +1,4 @@
-# Day 29 — 2026-12-22 — Where to get it (KU, deal or free day if live)
+# Day 29 — 2026-12-23 — Where to get it (KU, deal or free day if live)
 
 
 **Seed:** The Quiet Frequency is on Kindle and free with Kindle Unlimited.

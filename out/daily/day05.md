@@ -1,4 +1,4 @@
-# Day 5 — 2026-11-28 — Behind the scenes of writing it
+# Day 5 — 2026-11-29 — Behind the scenes of writing it
 
 
 **Seed:** Slade's tinnitus isn't decoration. In this story, the man who can never stop hearing a whine is the first to notice the signal hiding inside it.

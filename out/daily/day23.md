@@ -1,4 +1,4 @@
-# Day 23 — 2026-12-16 — Meet a character
+# Day 23 — 2026-12-17 — Meet a character
 
 
 **Seed:** Cipher: an eight-year-old Malinois with a federal tattoo and a bad hip from Kandahar. He'll never admit it hurts.

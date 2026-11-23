@@ -20,6 +20,7 @@ Commands:
   python growth.py daily [--live]         # what cron/GitHub Actions runs every morning
   python growth.py reschedule 2026-12-01  # move the plan so day 1 is that date
   python growth.py status                 # show the plan's first/last day
+  python growth.py buffer-check           # test BUFFER_API_KEY and list connected channels
   python growth.py add-platform x         # write posts for one more platform into the current plan
   python growth.py drop-platform pinterest
 
@@ -387,17 +388,101 @@ def _hook_url(book: dict, plat: str) -> str:
         or os.environ.get("BUFFER_WEBHOOK_URL", "")
 
 
+# ---------------------------------------------------------------------------
+# Buffer API (free on every Buffer plan): post straight to Buffer, no Zapier.
+# ---------------------------------------------------------------------------
+BUFFER_API = "https://api.buffer.com"
+SERVICE = {"tiktok": "tiktok", "reels": "instagram", "facebook": "facebook",
+           "pinterest": "pinterest", "x": "twitter", "bluesky": "bluesky", "mastodon": "mastodon"}
+
+
+def _gql(query: str, variables: dict | None = None) -> dict:
+    key = os.environ.get("BUFFER_API_KEY", "").strip()
+    req = urllib.request.Request(BUFFER_API, data=json.dumps({"query": query, "variables": variables or {}}).encode(),
+                                 headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            out = json.loads(r.read())
+    except urllib.error.HTTPError as ex:
+        raise RuntimeError(f"Buffer API HTTP {ex.code}: {ex.read()[:300]!r}") from None
+    if out.get("errors"):
+        raise RuntimeError("Buffer API: " + "; ".join(e.get("message", "?") for e in out["errors"]))
+    return out["data"]
+
+
+def buffer_channels() -> dict[str, str]:
+    """{service: channel id} for every channel in the Buffer account."""
+    found: dict[str, str] = {}
+    orgs = _gql("query { account { organizations { id name } } }")["account"]["organizations"]
+    for org in orgs:
+        chans = _gql("query { channels(input: { organizationId: %s }) { id name service } }"
+                     % json.dumps(org["id"]))["channels"]
+        for c in chans:
+            found.setdefault(c["service"].lower(), c["id"])
+            print(f"  Buffer channel: {c['service']:10} {c['name']}")
+    return found
+
+
+def buffer_create(book: dict, plat: str, channel_id: str, body: dict) -> str:
+    meta = {}
+    if plat == "reels":
+        meta = {"instagram": {"type": "post", "shouldShareToFeed": True}}
+    elif plat == "facebook":
+        meta = {"facebook": {"type": "post"}}
+    elif plat == "tiktok":
+        meta = {"tiktok": {"title": body["caption"].split("\n")[0][:90]}}
+    elif plat == "pinterest":
+        meta = {"pinterest": {"title": body["title"][:100], "url": body["link"]}}
+    inp = {"text": body["caption"], "channelId": channel_id, "schedulingType": "automatic",
+           "mode": "addToQueue", "needsApproval": False,
+           "assets": [{"image": {"url": body["image_url"]}}] if body["image_url"] else []}
+    if meta:
+        inp["metadata"] = meta
+    res = _gql("""mutation($input: CreatePostInput!) { createPost(input: $input) {
+        ... on PostActionSuccess { post { id dueAt } }
+        ... on MutationError { message } } }""", {"input": inp})["createPost"]
+    if res.get("message"):
+        raise RuntimeError(res["message"])
+    return (res.get("post") or {}).get("dueAt") or "queued"
+
+
 def publish(book: dict, live: bool, today: dt.date) -> None:
     p = OUT / "queue.json"
     if not p.exists():
         sys.exit("No queue — run `plan30` first.")
     q = json.loads(p.read_text())
     due = [x for x in q if x["date"] == today.isoformat() and x["status"] == "ready"]
+    use_api = bool(os.environ.get("BUFFER_API_KEY", "").strip())
+    channels: dict[str, str] = {}
+    if use_api and live and any(x["auto"] for x in due):
+        try:
+            channels = buffer_channels()
+        except Exception as ex:
+            print(f"error: couldn't reach Buffer ({ex}). Check BUFFER_API_KEY.")
+            return
     for x in due:
         if not x["auto"]:
             print(f"[manual] {x['platform']}: copy today's draft from out/daily/ and post it yourself")
             continue
         body, url = payload_for(book, x), _hook_url(book, x["platform"])
+        if use_api:
+            cid = book.get("buffer", {}).get("channel_ids", {}).get(x["platform"]) \
+                or channels.get(SERVICE.get(x["platform"], x["platform"]), "")
+            if not live:
+                print(f"[dry-run] {x['platform']:9} -> Buffer API  {body['caption'][:60]!r}"
+                      + (f"\n          image: {body['image_url']}" if body["image_url"] else ""))
+                continue
+            if not cid:
+                print(f"  {x['platform']}: no {SERVICE.get(x['platform'])} channel connected in Buffer; skipped")
+                continue
+            try:
+                when = buffer_create(book, x["platform"], cid, body)
+                x["status"] = "queued"
+                print(f"added to Buffer: {x['platform']} ({when})")
+            except Exception as ex:
+                x["status"], x["error"] = "error", str(ex)
+                print(f"error {x['platform']}: {ex}")
+            continue
         if x["platform"] in ("reels", "pinterest", "tiktok") and not body["image_url"]:
             print(f"  warning: {x['platform']} needs an image — set image_base_url in book.json")
         if not live or not url:
@@ -496,7 +581,8 @@ def status() -> None:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     ap.add_argument("cmd", choices=["plan30", "repurpose", "images", "blog", "hubspot", "publish",
-                                    "daily", "reschedule", "status", "add-platform", "drop-platform"])
+                                    "daily", "reschedule", "status", "add-platform", "drop-platform",
+                                    "buffer-check"])
     ap.add_argument("text", nargs="?")
     ap.add_argument("--book", default=str(HERE / "book.json"))
     ap.add_argument("--live", action="store_true")
@@ -524,6 +610,13 @@ def main() -> None:
         if not a.text:
             sys.exit("Usage: python growth.py reschedule YYYY-MM-DD")
         reschedule(dt.date.fromisoformat(a.text))
+    elif a.cmd == "buffer-check":
+        if not os.environ.get("BUFFER_API_KEY", "").strip():
+            sys.exit("BUFFER_API_KEY is empty in .env")
+        ch = buffer_channels()
+        need = {p: SERVICE[p] for p in book.get("growth", {}).get("daily_platforms", DAILY)}
+        for p, svc in need.items():
+            print(f"{'OK     ' if svc in ch else 'MISSING'} {p} -> Buffer {svc} channel")
     elif a.cmd == "add-platform":
         add_platform(book, a.text)
     elif a.cmd == "drop-platform":

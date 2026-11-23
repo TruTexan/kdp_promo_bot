@@ -1,4 +1,4 @@
-# Day 6 — 2026-11-29 — Mood board / setting aesthetic
+# Day 6 — 2026-11-30 — Mood board / setting aesthetic
 
 
 **Seed:** The world of The Quiet Frequency: first contact, listening and being heard, trust and betrayal, second chances, found family, the courage to stay.

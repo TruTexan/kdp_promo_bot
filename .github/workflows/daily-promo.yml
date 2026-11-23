@@ -1,5 +1,5 @@
 # Runs the bot every morning for free on GitHub Actions (public or private repo).
-# Add secrets: BUFFER_WEBHOOK_REELS, BUFFER_WEBHOOK_FACEBOOK, BUFFER_WEBHOOK_TIKTOK, OPENAI_API_KEY or ANTHROPIC_API_KEY, HUBSPOT_TOKEN (optional).
+# Add secrets: BUFFER_API_KEY (Zapier webhook secrets optional), OPENAI_API_KEY or ANTHROPIC_API_KEY, HUBSPOT_TOKEN (optional).
 name: daily-promo
 on:
   schedule: [{cron: "0 13 * * *"}]   # 13:00 UTC = 7:00 AM Central (standard time)
@@ -15,6 +15,7 @@ jobs:
       - run: pip install pillow
       - run: python growth.py daily --live
         env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           BUFFER_WEBHOOK_REELS: ${{ secrets.BUFFER_WEBHOOK_REELS }}
           BUFFER_WEBHOOK_FACEBOOK: ${{ secrets.BUFFER_WEBHOOK_FACEBOOK }}
           BUFFER_WEBHOOK_TIKTOK: ${{ secrets.BUFFER_WEBHOOK_TIKTOK }}

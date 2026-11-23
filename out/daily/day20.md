@@ -1,4 +1,4 @@
-# Day 20 — 2026-12-13 — Author life / why I wrote this
+# Day 20 — 2026-12-14 — Author life / why I wrote this
 
 
 **Seed:** Why I wrote The Quiet Frequency.

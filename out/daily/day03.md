@@ -1,4 +1,4 @@
-# Day 3 — 2026-11-26 — Meet a character
+# Day 3 — 2026-11-27 — Meet a character
 
 
 **Seed:** Slade Quintz, 56: a retired spy hiding at Cape Sorrow, with a permanent whine in his ears from a Tbilisi stairwell and nine years of guilt over Lisbon.

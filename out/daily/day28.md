@@ -1,4 +1,4 @@
-# Day 28 — 2026-12-21 — Reader reaction / honest review highlight
+# Day 28 — 2026-12-22 — Reader reaction / honest review highlight
 
 
 **Seed:** Early readers are finishing it in one sitting.

@@ -1,4 +1,4 @@
-# Day 12 — 2026-12-05 — A short, spoiler-free excerpt
+# Day 12 — 2026-12-06 — A short, spoiler-free excerpt
 
 
 **Seed:** The first thing I do every morning is check whether the world has ended. The world has not ended. It has only gotten stranger, a distinction I used to get paid to make.

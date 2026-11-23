@@ -1,4 +1,4 @@
-# Day 17 — 2026-12-10 — Engagement question for readers of the genre
+# Day 17 — 2026-12-11 — Engagement question for readers of the genre
 
 
 **Seed:** What's the best Science fiction thriller you read this year?

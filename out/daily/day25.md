@@ -1,4 +1,4 @@
-# Day 25 — 2026-12-18 — Behind the scenes of writing it
+# Day 25 — 2026-12-19 — Behind the scenes of writing it
 
 
 **Seed:** Cape Sorrow is a dead NOAA weather station. Slade still writes the tide log by hand every morning, though nobody needs it.

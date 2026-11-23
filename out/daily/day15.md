@@ -1,4 +1,4 @@
-# Day 15 — 2026-12-08 — Behind the scenes of writing it
+# Day 15 — 2026-12-09 — Behind the scenes of writing it
 
 
 **Seed:** Sebastion's charging station says SEBASTION, with an 'o'. He has objected monthly for nine years. Neither of them has ever changed the label.

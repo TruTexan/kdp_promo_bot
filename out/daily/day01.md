@@ -1,4 +1,4 @@
-# Day 1 — 2026-11-24 — The premise in one gripping line
+# Day 1 — 2026-11-25 — The premise in one gripping line
 
 
 **Seed:** A dying alien mind. A burned-out spy. One last signal.

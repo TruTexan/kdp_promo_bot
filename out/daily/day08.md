@@ -1,4 +1,4 @@
-# Day 8 — 2026-12-01 — Reader reaction / honest review highlight
+# Day 8 — 2026-12-02 — Reader reaction / honest review highlight
 
 
 **Seed:** Early readers are finishing it in one sitting.

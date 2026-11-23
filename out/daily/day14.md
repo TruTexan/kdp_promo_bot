@@ -1,4 +1,4 @@
-# Day 14 — 2026-12-07 — 'If you liked X, try this' / tropes in the book
+# Day 14 — 2026-12-08 — 'If you liked X, try this' / tropes in the book
 
 
 **Seed:** For fans of Project Hail Mary, Slow Horses: first contact, listening and being heard, trust and betrayal, second chances, found family, the courage to stay.

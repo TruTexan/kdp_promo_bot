@@ -1,4 +1,4 @@
-# Day 13 — 2026-12-06 — Meet a character
+# Day 13 — 2026-12-07 — Meet a character
 
 
 **Seed:** Sebastion: the last surviving hotel-concierge robot, rescued face down in a Coos Bay scrapyard for $20 and a six-pack. He fixes everything with duct tape and steeps tea he can't drink.
