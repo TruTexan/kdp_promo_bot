@@ -1,0 +1,127 @@
+{
+  "title": "The Quiet Frequency",
+  "subtitle": "",
+  "author": "Jules Rooke",
+  "genre": "Science fiction thriller",
+  "comparable_titles": [
+    "Project Hail Mary",
+    "Slow Horses"
+  ],
+  "hook": "A dying alien mind. A burned-out spy. One last signal.",
+  "blurb": "Retired spy Slade Quintz has spent years hiding at Cape Sorrow, a dead weather station on the Oregon coast, with his loyal dog Cipher and a duct-taped android named Sebastion. Then every machine he owns starts pulsing to the same rhythm. It's a voice: a dying colony of living light high above Earth, blacking out the grid every time it cries for help. To answer it, Slade needs the woman he abandoned nine years ago. A storm is coming, and powerful people want the colony as a weapon. Saving it will cost everything. For Slade, the hardest part is staying.",
+  "themes": [
+    "first contact",
+    "listening and being heard",
+    "trust and betrayal",
+    "second chances",
+    "found family",
+    "the courage to stay"
+  ],
+  "audience": "Readers of character-driven, wry first-contact sci-fi and burned-out-spy thrillers",
+  "asin_ebook": "B0HS8PVDY6",
+  "asin_paperback": "",
+  "instant_preview_url": "",
+  "author_website": "",
+  "newsletter_signup_url": "",
+  "formats": [
+    "ebook",
+    "paperback"
+  ],
+  "release_date": "2026-11-20",
+  "use_preorder": false,
+  "preorder_days": 30,
+  "kdp_select": true,
+  "select_promo": "free",
+  "free_days": 3,
+  "countdown_days": 7,
+  "list_price_usd": 4.99,
+  "countdown_price_usd": 0.99,
+  "ads_daily_budget_usd": 10,
+  "social": {
+    "mastodon": {
+      "enabled": false,
+      "instance": "https://mastodon.social",
+      "token_env": "MASTODON_TOKEN"
+    },
+    "bluesky": {
+      "enabled": false,
+      "handle": "you.bsky.social",
+      "app_password_env": "BLUESKY_APP_PASSWORD"
+    },
+    "webhook": {
+      "enabled": false,
+      "url_env": "PROMO_WEBHOOK_URL"
+    }
+  },
+  "hashtags": [
+    "#BookTok",
+    "#SciFiBooks",
+    "#SciFiThriller",
+    "#KindleUnlimited",
+    "#FirstContact",
+    "#NewRelease"
+  ],
+  "excerpts": [
+    "The fog comes in off the Pacific the way it always does, without asking.",
+    "The first thing I do every morning is check whether the world has ended. The world has not ended. It has only gotten stranger, a distinction I used to get paid to make.",
+    "\"It works the way a rumor works. It spreads, and eventually someone gets burned.\"",
+    "Nobody here can be left behind, because nobody here can leave.",
+    "Fifty-six is when your body starts sending invoices.",
+    "\"You called it a vanity project, and you said it in front of the toaster. The toaster has not forgotten.\"",
+    "I had trusted that channel for twelve years. It had never lied to me, and I had come to believe that something that had never lied could not.",
+    "\"Nine,\" she says. \"Nine beats. Pause. Nine.\""
+  ],
+  "characters": [
+    "Slade Quintz, 56: a retired spy hiding at Cape Sorrow, with a permanent whine in his ears from a Tbilisi stairwell and nine years of guilt over Lisbon.",
+    "Sebastion: the last surviving hotel-concierge robot, rescued face down in a Coos Bay scrapyard for $20 and a six-pack. He fixes everything with duct tape and steeps tea he can't drink.",
+    "Cipher: an eight-year-old Malinois with a federal tattoo and a bad hip from Kandahar. He'll never admit it hurts.",
+    "Dr. Marisol Vega: the physicist whose paper on living plasma in the sky was dismissed as 'a fairy tale in LaTeX', and the woman Slade left behind in Lisbon.",
+    "Lumen: a dying colony of living light in the upper atmosphere, blacking out the grid every time it calls for help. Sebastion named it because calling it 'it' seemed rude.",
+    "Director Amelia Hartwell: a federal director with clean shoes, a looping signature and a plan to turn Lumen into a weapon."
+  ],
+  "behind_the_scenes": [
+    "Slade's tinnitus isn't decoration. In this story, the man who can never stop hearing a whine is the first to notice the signal hiding inside it.",
+    "Sebastion's charging station says SEBASTION, with an 'o'. He has objected monthly for nine years. Neither of them has ever changed the label.",
+    "Cape Sorrow is a dead NOAA weather station. Slade still writes the tide log by hand every morning, though nobody needs it.",
+    "Every chapter is a day: one week of fog, storm and an alien voice on the Oregon coast."
+  ],
+  "reader_quotes": [],
+  "growth": {
+    "start_date": "",
+    "days": 30,
+    "extra_platforms": [],
+    "reddit_weekday": 2,
+    "post_times": {
+      "reels": "12:00",
+      "facebook": "13:00",
+      "pinterest": "20:00"
+    },
+    "daily_platforms": [
+      "reels",
+      "facebook",
+      "pinterest"
+    ]
+  },
+  "brand": {
+    "bg": "#17191c",
+    "fg": "#ece8df",
+    "accent": "#d4a55a",
+    "cover_image": "cover.jpg"
+  },
+  "buffer": {
+    "webhooks": {
+      "reels": "BUFFER_WEBHOOK_REELS",
+      "facebook": "BUFFER_WEBHOOK_FACEBOOK",
+      "pinterest": "BUFFER_WEBHOOK_PINTEREST"
+    }
+  },
+  "hubspot": {
+    "token_env": "HUBSPOT_TOKEN"
+  },
+  "tagline": "The end of the world sounds like a whisper.",
+  "word_count": 65700,
+  "setting": "Cape Sorrow, a decommissioned NOAA weather station at the end of four miles of cracked road above Port Halloran on the fog-bound Oregon coast; a sealed Cold War listening bunker; the Eugene observatory. The story runs over one week of fog and storm.",
+  "tone": "First-person, present tense, dry humor under real heartbreak. Sebastion's deadpan butler wit balances Slade's guilt. Quiet and atmospheric, then a thriller once the feds arrive.",
+  "spoiler_guard": "Never reveal: what happened on the Lisbon rooftop, the truth about Anton Kessler (Slade's handler, believed dead), Dana Okafor's role, who betrays whom in the observatory, what happens during the Surge, or the ending. Use only material from Chapters 1–7 and the back cover.",
+  "image_base_url": ""
+}

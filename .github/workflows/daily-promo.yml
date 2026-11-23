@@ -1,0 +1,28 @@
+# Runs the bot every morning for free on GitHub Actions (public or private repo).
+# Add secrets: BUFFER_WEBHOOK_REELS, BUFFER_WEBHOOK_FACEBOOK, BUFFER_WEBHOOK_PINTEREST, OPENAI_API_KEY or ANTHROPIC_API_KEY, HUBSPOT_TOKEN (optional).
+name: daily-promo
+on:
+  schedule: [{cron: "0 13 * * *"}]   # 13:00 UTC = 7:00 AM Central (standard time)
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install pillow
+      - run: python growth.py daily --live
+        env:
+          BUFFER_WEBHOOK_REELS: ${{ secrets.BUFFER_WEBHOOK_REELS }}
+          BUFFER_WEBHOOK_FACEBOOK: ${{ secrets.BUFFER_WEBHOOK_FACEBOOK }}
+          BUFFER_WEBHOOK_PINTEREST: ${{ secrets.BUFFER_WEBHOOK_PINTEREST }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          HUBSPOT_TOKEN: ${{ secrets.HUBSPOT_TOKEN }}
+      - name: Save queue status
+        run: |
+          git config user.name promo-bot && git config user.email promo-bot@users.noreply.github.com
+          git add -f out/queue.json && git commit -m "promo: daily run" || true
+          git push || true

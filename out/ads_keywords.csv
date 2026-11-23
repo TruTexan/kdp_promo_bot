@@ -1,0 +1,36 @@
+campaign,target,match_type,starting_bid_usd
+SP-Auto,(automatic targeting),auto,0.4
+SP-Manual-Keywords,best science fiction thriller novels,broad,0.45
+SP-Manual-Keywords,best science fiction thriller novels,exact,0.6
+SP-Manual-Keywords,books like project hail mary,broad,0.45
+SP-Manual-Keywords,books like project hail mary,exact,0.6
+SP-Manual-Keywords,books like slow horses,broad,0.45
+SP-Manual-Keywords,books like slow horses,exact,0.6
+SP-Manual-Keywords,first contact science fiction thriller,broad,0.45
+SP-Manual-Keywords,first contact science fiction thriller,exact,0.6
+SP-Manual-Keywords,found family science fiction thriller,broad,0.45
+SP-Manual-Keywords,found family science fiction thriller,exact,0.6
+SP-Manual-Keywords,listening and being heard science fiction thriller,broad,0.45
+SP-Manual-Keywords,listening and being heard science fiction thriller,exact,0.6
+SP-Manual-Keywords,new science fiction thriller 2026,broad,0.45
+SP-Manual-Keywords,new science fiction thriller 2026,exact,0.6
+SP-Manual-Keywords,project hail mary,broad,0.45
+SP-Manual-Keywords,project hail mary,exact,0.6
+SP-Manual-Keywords,science fiction thriller,broad,0.45
+SP-Manual-Keywords,science fiction thriller,exact,0.6
+SP-Manual-Keywords,science fiction thriller books,broad,0.45
+SP-Manual-Keywords,science fiction thriller books,exact,0.6
+SP-Manual-Keywords,science fiction thriller kindle,broad,0.45
+SP-Manual-Keywords,science fiction thriller kindle,exact,0.6
+SP-Manual-Keywords,science fiction thriller kindle unlimited,broad,0.45
+SP-Manual-Keywords,science fiction thriller kindle unlimited,exact,0.6
+SP-Manual-Keywords,second chances science fiction thriller,broad,0.45
+SP-Manual-Keywords,second chances science fiction thriller,exact,0.6
+SP-Manual-Keywords,slow horses,broad,0.45
+SP-Manual-Keywords,slow horses,exact,0.6
+SP-Manual-Keywords,the courage to stay science fiction thriller,broad,0.45
+SP-Manual-Keywords,the courage to stay science fiction thriller,exact,0.6
+SP-Manual-Keywords,trust and betrayal science fiction thriller,broad,0.45
+SP-Manual-Keywords,trust and betrayal science fiction thriller,exact,0.6
+SP-Product-Targeting,ASIN of 'Project Hail Mary' (look up),product,0.5
+SP-Product-Targeting,ASIN of 'Slow Horses' (look up),product,0.5

@@ -1,0 +1,252 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//kdp-promo-bot//EN
+BEGIN:VEVENT
+UID:kdp-0-20261030@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[Author Central] Claim book in Author Central; add bio, photo, editorial revi
+DESCRIPTION:Claim book in Author Central; add bio\, photo\, editorial reviews.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-1-20261030@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[A+ Content] Submit A+ Content modules (comp-title banner, character/sett
+DESCRIPTION:Submit A+ Content modules (comp-title banner\, character/setting images).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-2-20261102@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[Sample Chapters] Share chapter 1 excerpt on site/newsletter; link to pre-orde
+DESCRIPTION:Share chapter 1 excerpt on site/newsletter; link to pre-order.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-3-20261106@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[Kindle Instant Preview] Post the Instant Preview link so people can read the opening
+DESCRIPTION:Post the Instant Preview link so people can read the opening free.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-4-20261106@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[Self-promotion] Recruit honest ARC readers (no rating requirement).
+DESCRIPTION:Recruit honest ARC readers (no rating requirement).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-5-20261113@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[Nominate Your eBook (beta)] Check KDP for 'Nominate your eBook for a promotion' eligibil
+DESCRIPTION:Check KDP for 'Nominate your eBook for a promotion' eligibility; submit.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-6-20261117@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[Self-promotion] Countdown teaser: 3 days to launch — hook line + quote.
+DESCRIPTION:Countdown teaser: 3 days to launch — hook line + quote.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-7-20261120@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Self-promotion (email)] Launch-day newsletter with buy + KU link.
+DESCRIPTION:Launch-day newsletter with buy + KU link.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-8-20261120@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Self-promotion] Launch-day announcement.
+DESCRIPTION:Launch-day announcement.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-9-20261120@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Amazon Advertising] Start Sponsored Products: Auto + Manual keyword campaigns ($
+DESCRIPTION:Start Sponsored Products: Auto + Manual keyword campaigns ($10/day total).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-10-20261120@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[KDP Select / Kindle Unlimited] Enrolled in KDP Select — promote 'Read free with Kindle Unli
+DESCRIPTION:Enrolled in KDP Select — promote 'Read free with Kindle Unlimited'.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-11-20261122@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:[Buying & Gifting eBooks] Social giveaway: gift 5 eBooks to winners (Gift this eBook).
+DESCRIPTION:Social giveaway: gift 5 eBooks to winners (Gift this eBook).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-12-20261124@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[Lending for Kindle] Remind buyers they can lend the eBook to a friend.
+DESCRIPTION:Remind buyers they can lend the eBook to a friend.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-13-20261127@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[Amazon Advertising] Week-1 ads review: harvest converting search terms, negate w
+DESCRIPTION:Week-1 ads review: harvest converting search terms\, negate wasters.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-14-20261204@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[Self-promotion] Weekly content post (theme / excerpt / behind-the-scenes).
+DESCRIPTION:Weekly content post (theme / excerpt / behind-the-scenes).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-15-20261204@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[Expanded Distribution] Enable Expanded Distribution for paperback (libraries/bookst
+DESCRIPTION:Enable Expanded Distribution for paperback (libraries/bookstores).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-16-20261209@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:[Free Promotions] Schedule free days in KDP Bookshelf; book promo sites (vette
+DESCRIPTION:Schedule free days in KDP Bookshelf; book promo sites (vetted).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-17-20261211@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:[Free Promotions] FREE day 1/3 — post + email.
+DESCRIPTION:FREE day 1/3 — post + email.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-18-20261211@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:[Self-promotion] Weekly content post (theme / excerpt / behind-the-scenes).
+DESCRIPTION:Weekly content post (theme / excerpt / behind-the-scenes).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-19-20261212@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:[Free Promotions] FREE day 2/3 — post + email.
+DESCRIPTION:FREE day 2/3 — post + email.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-20-20261213@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:[Free Promotions] FREE day 3/3 — post + email.
+DESCRIPTION:FREE day 3/3 — post + email.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-21-20261214@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:[Amazon Advertising] Free run over — raise ad bids to ride also-boughts.
+DESCRIPTION:Free run over — raise ad bids to ride also-boughts.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-22-20261218@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[Self-promotion] Weekly content post (theme / excerpt / behind-the-scenes).
+DESCRIPTION:Weekly content post (theme / excerpt / behind-the-scenes).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-23-20261220@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:[Amazon Advertising] Month-1 ads review: add category/product-targeting campaign 
+DESCRIPTION:Month-1 ads review: add category/product-targeting campaign on comps.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-24-20261220@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:[Self-promotion (email)] Newsletter: reader reactions + ask for honest reviews.
+DESCRIPTION:Newsletter: reader reactions + ask for honest reviews.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-25-20261225@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:[Self-promotion] Weekly content post (theme / excerpt / behind-the-scenes).
+DESCRIPTION:Weekly content post (theme / excerpt / behind-the-scenes).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-26-20270101@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[Self-promotion] Weekly content post (theme / excerpt / behind-the-scenes).
+DESCRIPTION:Weekly content post (theme / excerpt / behind-the-scenes).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-27-20270104@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:[Merchandising (ACX / contests)] Evaluate audiobook via ACX and Amazon literary contests.
+DESCRIPTION:Evaluate audiobook via ACX and Amazon literary contests.
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-28-20270108@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:[Self-promotion] Weekly content post (theme / excerpt / behind-the-scenes).
+DESCRIPTION:Weekly content post (theme / excerpt / behind-the-scenes).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-29-20270115@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[Self-promotion] Weekly content post (theme / excerpt / behind-the-scenes).
+DESCRIPTION:Weekly content post (theme / excerpt / behind-the-scenes).
+END:VEVENT
+BEGIN:VEVENT
+UID:kdp-30-20270211@promo-bot
+DTSTAMP:20261120T213848Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:[KDP Select / Kindle Unlimited] Select term ends in 7 days: decide re-enroll (auto-renew) vs
+DESCRIPTION:Select term ends in 7 days: decide re-enroll (auto-renew) vs wide.
+END:VEVENT
+END:VCALENDAR
