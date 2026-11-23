@@ -39,10 +39,17 @@ If you like wry first-contact sci-fi and burned-out-spy stories with a lot of he
 What's the best running joke you've ever found in a book?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: Wry First-Contact Sci-Fi Thriller
+His charging station says SEBASTION. With an 'o.' 👀
 
-A retired spy, a loyal dog, and a duct-taped android named Sebastion hide on the Oregon coast until a dying colony of living light calls for help. Character-driven science fiction thriller with dry humor and heart. Perfect for fans of first contact stories and burned-out-spy novels. By Jules Rooke.
+He has objected monthly for nine years.
+Neither of them has ever changed the label.
+That's the whole relationship, and it's the heart of The Quiet Frequency.
+
+A burned-out spy, a duct-taped android, a bad-hipped Malinois, and one dying alien mind calling for help.
+
+Link in bio.
+
+#BookTok #SciFiBooks #SciFiThriller #FirstContact #BookRecommendations
 ```
-

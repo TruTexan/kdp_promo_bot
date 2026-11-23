@@ -54,10 +54,15 @@ Get it here: https://www.amazon.com/dp/B0HS8PVDY6
 What's the best "quiet" sci-fi story you've read, the kind that gets under your skin without ever raising its voice?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-Title: The Quiet Frequency: A Sci-Fi Thriller About a Signal That Spreads
+"It works the way a rumor works. It spreads, and eventually someone gets burned."
 
-Description: Science fiction thriller by Jules Rooke. A dying alien mind, a burned-out spy, one last signal. Wry first-contact sci-fi with a deadpan android, a loyal dog, and a foggy Oregon coast setting. For fans of character-driven sci-fi and spy thrillers. #SciFiBooks #FirstContact
+A dying alien mind. A burned-out spy. One last signal.
+Slade Quintz just wanted to hide at Cape Sorrow with his bad-hip dog and a duct-taped android who steeps tea he can't drink.
+Then every machine he owns starts pulsing to the same rhythm.
+
+The Quiet Frequency by Jules Rooke: wry first contact with a lot of heart. Link in bio.
+
+#BookTok #SciFiThriller #FirstContact #SciFiBooks
 ```
-

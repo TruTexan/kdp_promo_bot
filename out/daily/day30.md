@@ -44,10 +44,13 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's your favorite kind of first-contact story: awe-struck, creepy, or quietly heartbreaking?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-Title: Why I Wrote The Quiet Frequency | Sci-Fi Thriller
+I wanted a first contact story where the alien is the one begging for help.
+So I wrote The Quiet Frequency: a burned-out spy, a duct-taped android who steeps tea he can't drink, and a dying colony of living light that blacks out the grid every time it cries out.
+The end of the world sounds like a whisper.
+But for Slade, the hardest part isn't answering the signal. It's staying.
+Link in bio.
 
-Description: Why write a first-contact story about a burned-out spy, a duct-taped android and a dying colony of living light? Because sometimes the hardest part of saving the world is staying. A character-driven, wry science fiction thriller set on the foggy Oregon coast, for fans of first contact and spy thrillers.
+#BookTok #SciFiThriller #FirstContact #SciFiBooks
 ```
-

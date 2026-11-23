@@ -43,13 +43,6 @@ The Quiet Frequency by Jules Rooke: https://www.amazon.com/dp/B0HS8PVDY6
 What's your favorite kind of first-contact story: the loud kind, or the quiet kind?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-Title: The Quiet Frequency: Why I Wrote a Quiet First-Contact Thriller
-
-Description: Why I wrote The Quiet Frequency: a wry, character-driven science fiction thriller about a burned-out spy, a duct-taped android, a loyal dog, and a dying alien mind calling from above Earth. Foggy Oregon coast, first contact, and one last signal. For fans of first-contact sci-fi and retired-spy thrillers. By Jules Rooke.
-```
-
 ## reddit — manual — ready
 ```
 Title: I wrote a first-contact story where the alien isn't invading, it's dying. Here's why I wanted to write it that way.
@@ -83,3 +76,16 @@ It's a character-driven sci-fi thriller in the vein of wry first contact meets b
 ```
 
 > review: Confirm the Countdown Deal is scheduled for that date.
+
+## tiktok — auto (Buffer) — ready
+```
+Why I wrote The Quiet Frequency: I wanted first contact that doesn't arrive with a bang. 🌫️
+
+What if the end of the world sounds like a whisper?
+A dying colony of living light. A burned-out spy. A duct-taped android who steeps tea he can't drink.
+For Slade Quintz, saving it isn't the hardest part. Staying is.
+
+The Quiet Frequency by Jules Rooke. Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller
+```

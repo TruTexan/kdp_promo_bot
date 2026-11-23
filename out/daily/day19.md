@@ -44,17 +44,20 @@ What's your favorite kind of first-contact story: quiet and eerie, or full-on th
 
 > review: If 'free', make sure a Free Promotion is actually live that day.
 
-## pinterest — auto (Buffer) — ready
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: A Sci-Fi Thriller on Kindle Unlimited
-
-A dying alien mind. A burned-out spy. One last signal. Jules Rooke's science fiction thriller mixes first contact, a foggy Oregon coast, a duct-taped android, and dry humor. Great for fans of character-driven sci-fi and spy thrillers. Free with Kindle Unlimited.
+POV: the end of the world sounds like a whisper 🌫️
+A burned-out spy. A duct-taped butler robot. A dog with a bad hip and a federal tattoo.
+And a dying alien mind of living light blacking out the grid every time it cries for help.
+The Quiet Frequency is on Kindle and free with Kindle Unlimited.
+Link in bio.
+#BookTok #SciFiThriller #FirstContact #KindleUnlimited #SciFiBooks
 ```
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.

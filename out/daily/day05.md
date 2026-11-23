@@ -43,10 +43,19 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's the best "flaw that turns out to be a strength" you've seen in a character?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-Title: The Quiet Frequency: A Burned-Out Spy and a Signal From Space
+The man who can't stop hearing a whine is the first to hear the signal.
 
-Description: Science fiction thriller by Jules Rooke. Retired spy Slade Quintz hides on the foggy Oregon coast with a loyal dog and a duct-taped android, until a dying colony of living light calls for help. Only the man with a permanent whine in his ears hears the signal. Wry first-contact sci-fi with heart. Add to your sci-fi reading list.
+Slade's tinnitus isn't a quirk. It's a Tbilisi stairwell he carries in his skull.
+
+So when every machine at Cape Sorrow starts pulsing to one rhythm, he's the one who notices something hiding inside the noise.
+
+A dying alien mind. A burned-out spy. One last signal.
+
+The Quiet Frequency by Jules Rooke: wry first-contact sci-fi with a duct-taped android and a dog with a bad hip.
+
+Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller
 ```
-

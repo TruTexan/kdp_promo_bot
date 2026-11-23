@@ -45,10 +45,18 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's your favorite unlikely sidekick in a sci-fi story: a loyal dog, a sarcastic robot, or both?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-Title: The Quiet Frequency: Spy Thriller Meets First-Contact Sci-Fi
+POV: your retired spy has a permanent whine in his ears and nine years of guilt.
 
-Description: Retired spy Slade Quintz is hiding at a dead weather station on the foggy Oregon coast with a loyal Malinois and a duct-taped android butler. Then a dying colony of living light starts blacking out the grid. A character-driven science fiction thriller by Jules Rooke for fans of wry first contact and burned-out spies. Find it on Amazon.
+Slade Quintz, 56, is hiding at a dead weather station on the Oregon coast.
+His ringing ears are a souvenir from a Tbilisi stairwell. The guilt is from Lisbon.
+His roommates: a bad-hip Malinois and a duct-taped butler robot who steeps tea he can't drink.
+Then every machine he owns starts pulsing to the same rhythm.
+
+The Quiet Frequency by Jules Rooke: wry first-contact sci-fi with real heartbreak.
+
+Link in bio.
+
+#BookTok #SciFiThriller #FirstContact #SciFiBooks #BookRecommendations
 ```
-

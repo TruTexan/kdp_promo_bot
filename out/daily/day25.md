@@ -42,13 +42,6 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's a small daily habit you keep up even though nobody else would notice if you stopped?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-The Quiet Frequency: A Sci-Fi Thriller About a Retired Spy and a Dying Signal
-
-A dead weather station, a handwritten tide log, and a voice from the sky. The Quiet Frequency by Jules Rooke is a character-driven science fiction thriller with first contact, a burned-out spy, a loyal dog, and a duct-taped android. Atmospheric, wry, and heartfelt. Find it on Amazon.
-```
-
 ## blog — manual — ready
 ```
 # The Man Who Still Writes the Tide Log
@@ -80,4 +73,19 @@ If you like character-driven, wry first-contact sci-fi or burned-out-spy thrille
 *The end of the world sounds like a whisper.*
 
 **[Get The Quiet Frequency by Jules Rooke on Amazon](https://www.amazon.com/dp/B0HS8PVDY6)**
+```
+
+## tiktok — auto (Buffer) — ready
+```
+He still writes the tide log by hand every morning. Nobody needs it. The station has been dead for years.
+
+Cape Sorrow is a decommissioned NOAA weather station at the end of four miles of cracked road. Slade Quintz, retired spy, hides there with a bad-hip Malinois and a duct-taped butler robot.
+
+Then every machine he owns starts pulsing to the same rhythm.
+
+The Quiet Frequency by Jules Rooke: dry humor, real heartbreak, first contact in the fog. 🌫️
+
+Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller #BookRecommendations
 ```

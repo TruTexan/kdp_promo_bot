@@ -41,13 +41,6 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's the best sidekick you've ever read, human, robot, or canine?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-The Quiet Frequency: A Sci-Fi Thriller With a Duct-Taped Android
-
-Science fiction thriller by Jules Rooke. A burned-out spy, a loyal dog, and Sebastion, a hotel-concierge robot rescued from a scrapyard for $20 and a six-pack, answer a dying alien mind's signal on the Oregon coast. Wry first-contact sci-fi for fans of character-driven spy thrillers.
-```
-
 ## reddit — manual — ready
 ```
 Title: A robot who steeps tea he can't drink: what makes a machine character feel like a person instead of a gimmick?
@@ -79,4 +72,19 @@ A few questions for the thread:
 - Is there a quirk that made you roll your eyes because it felt like a gimmick?
 
 Full disclosure: Sebastion is from my own book, *The Quiet Frequency* (sci-fi thriller, Jules Rooke). It's about a retired spy, his bad-hipped dog, and a dying colony of living light that blacks out the grid when it calls for help. I'm not here to push it, though. I'm more interested in the craft question. If the mods allow it and anyone wants the link, I'm happy to share it in the comments.
+```
+
+## tiktok — auto (Buffer) — ready
+```
+POV: your robot butler was rescued face down in a scrapyard for $20 and a six-pack 🤖☕
+
+Meet Sebastion, the last surviving hotel-concierge robot. He fixes everything with duct tape and steeps tea he can't drink.
+
+He's also the dry-wit heart of The Quiet Frequency, where a burned-out spy, a dog with a bad hip, and a dying alien mind of living light are all hiding at the end of the Oregon coast.
+
+For fans of wry first-contact sci-fi and tired-spy thrillers.
+
+The Quiet Frequency by Jules Rooke. Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller #BookRecommendations
 ```

@@ -45,10 +45,17 @@ Get it here: https://www.amazon.com/dp/B0HS8PVDY6
 What's your favorite kind of first-contact story: the quiet, atmospheric kind or the all-out thriller?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: A First-Contact Sci-Fi Thriller by Jules Rooke
+POV: the end of the world sounds like a whisper. 🌫️
 
-A retired spy, a duct-taped android butler, and a dying colony of living light calling for help. Character-driven science fiction thriller with dry humor, an atmospheric Oregon coast setting, found family, second chances, and the courage to stay. For fans of first-contact sci-fi and burned-out-spy thrillers.
+A burned-out spy hiding on the foggy Oregon coast. A deadpan duct-taped butler android. A dog with a bad hip who will never admit it hurts.
+
+And a dying alien mind of living light, blacking out the grid every time it cries for help.
+
+First contact, but it's about listening, second chances, found family, and the courage to stay.
+
+The Quiet Frequency by Jules Rooke. Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller #BookRecommendations
 ```
-

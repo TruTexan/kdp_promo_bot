@@ -42,17 +42,22 @@ What's the best wry, character-driven first-contact story you've read?
 
 > review: If 'free', make sure a Free Promotion is actually live that day.
 
-## pinterest — auto (Buffer) — ready
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: A Sci-Fi Thriller, Free with Kindle Unlimited
+POV: every machine you own starts pulsing to the same rhythm 📡
 
-Science fiction thriller by Jules Rooke. Retired spy Slade Quintz, a duct-taped android and a loyal dog hide on the foggy Oregon coast until a dying alien mind starts blacking out the grid. Character-driven first-contact sci-fi with dry humor. On Kindle and free with Kindle Unlimited. #SciFiBooks #FirstContact
+A dying alien mind. A burned-out spy. One last signal.
+The Quiet Frequency has a duct-taped android who steeps tea he can't drink, and a Malinois with a bad hip who'll never admit it hurts.
+Wry first-contact sci-fi with real heartbreak underneath.
+On Kindle and free with Kindle Unlimited. Link in bio.
+
+#BookTok #SciFiThriller #FirstContact #KindleUnlimited #SciFiBooks
 ```
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.

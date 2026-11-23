@@ -48,10 +48,17 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's the best "found family" you've ever met in a book, even if it included a robot and a dog?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: A First-Contact Sci-Fi Thriller by Jules Rooke
+POV: the end of the world sounds like a whisper. 🌫️
 
-A dying alien mind. A burned-out spy. One last signal. Read this character-driven science fiction thriller set on the foggy Oregon coast, with a duct-taped android, a loyal old dog, first contact, found family, second chances, and the courage to stay. For fans of wry sci-fi and spy thrillers. #SciFiBooks #FirstContact #SciFiThriller
+A burned-out spy hiding on the foggy Oregon coast.
+A duct-taped butler android who steeps tea he can't drink.
+A dying alien mind named Lumen, begging for someone to listen.
+
+First contact, found family, and the courage to stay. The Quiet Frequency by Jules Rooke.
+
+Link in bio.
+
+#BookTok #SciFiThriller #FirstContact #SciFiBooks #BookRecommendations
 ```
-

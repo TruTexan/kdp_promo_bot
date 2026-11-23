@@ -43,13 +43,6 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's the best first-contact story you've ever read, and what made it stick with you?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-The Quiet Frequency: Sci-Fi Thriller for Project Hail Mary & Slow Horses Fans
-
-A dying alien mind. A burned-out spy. One last signal. Jules Rooke's first-contact science fiction thriller blends wry humor, found family, second chances, and a foggy Oregon coast setting. Great for readers of character-driven sci-fi and spy thrillers. #scifibooks #firstcontact #scifithriller
-```
-
 ## blog — manual — ready
 ```
 # The End of the World Sounds Like a Whisper
@@ -87,4 +80,19 @@ A storm is coming, and powerful people want the colony as a weapon. Saving Lumen
 *The Quiet Frequency* by Jules Rooke: a dying alien mind, a burned-out spy, one last signal.
 
 **[Get the book on Amazon](https://www.amazon.com/dp/B0HS8PVDY6)**
+```
+
+## tiktok — auto (Buffer) — ready
+```
+POV: the end of the world sounds like a whisper 🌫️📡
+
+A burned-out spy hiding on the foggy Oregon coast. A duct-taped butler android who steeps tea he can't drink. A Malinois with a bad hip who'll never admit it hurts.
+
+Then every machine they own starts pulsing to the same rhythm. It's a dying colony of living light, begging to be heard.
+
+For fans of Project Hail Mary and Slow Horses: first contact, found family, and the courage to stay.
+
+The Quiet Frequency by Jules Rooke. Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller #BookRecommendations
 ```

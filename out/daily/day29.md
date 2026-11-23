@@ -44,17 +44,20 @@ If a robot butler and a grumpy ex-spy were your only defense against the end of 
 
 > review: If 'free', make sure a Free Promotion is actually live that day.
 
-## pinterest — auto (Buffer) — ready
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+> review: If 'free', make sure a Free Promotion is actually live that day.
+
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: A Sci-Fi Thriller on Kindle Unlimited
-
-A dying alien mind. A burned-out spy. One last signal. Jules Rooke's science fiction thriller mixes first contact, a duct-taped android butler, and a foggy Oregon coast. Wry, atmospheric, heartfelt. On Kindle and free with Kindle Unlimited. Save it for your sci-fi reading list. https://www.amazon.com/dp/B0HS8PVDY6
+POV: the end of the world sounds like a whisper 🌫️📡
+A burned-out spy. A duct-taped butler android. A dog with a bad hip who won't admit it hurts.
+And a dying alien mind of living light blacking out the grid to call for help.
+The Quiet Frequency is on Kindle and free with Kindle Unlimited.
+Link in bio.
+#BookTok #SciFiThriller #FirstContact #KindleUnlimited #BookRecommendations
 ```
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.
-
-> review: If 'free', make sure a Free Promotion is actually live that day.

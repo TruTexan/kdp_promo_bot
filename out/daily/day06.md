@@ -39,13 +39,6 @@ Get it here: https://www.amazon.com/dp/B0HS8PVDY6
 What's the last story that made you want to stay with its characters long after the final page?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-The Quiet Frequency by Jules Rooke: A First-Contact Sci-Fi Thriller
-
-A dying alien mind. A burned-out spy. One last signal. Science fiction thriller set on the foggy Oregon coast, with a retired spy, a loyal dog, and a deadpan android. Themes of first contact, found family, second chances, and the courage to stay. Great for readers of wry, character-driven sci-fi. https://www.amazon.com/dp/B0HS8PVDY6
-```
-
 ## reddit — manual — ready
 ```
 Title: First contact stories are usually about talking. I wanted to write one about listening, and about what it costs to stay.
@@ -78,4 +71,19 @@ What I'm curious about:
 - Any burned-out-spy-meets-the-impossible books I should be reading?
 
 The book is *The Quiet Frequency* by Jules Rooke. I haven't dropped a link because I don't know if the sub allows it, but I'm happy to share it in the comments if mods and members are fine with that. M
+```
+
+## tiktok — auto (Buffer) — ready
+```
+The end of the world sounds like a whisper. 🌫️
+
+A burned-out spy, a duct-taped butler android, and a dog with a bad hip. All hiding at the edge of the Oregon coast.
+
+Then every machine they own starts pulsing to the same rhythm. It's a voice. A dying colony of living light, begging for someone to listen.
+
+First contact, found family, second chances, and the hardest thing Slade has ever had to do: stay.
+
+The Quiet Frequency by Jules Rooke. Link in bio.
+
+#BookTok #SciFiThriller #FirstContact #SciFiBooks #BookRecommendations
 ```

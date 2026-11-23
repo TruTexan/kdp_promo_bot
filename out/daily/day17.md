@@ -41,10 +41,14 @@ See it here: https://www.amazon.com/dp/B0HS8PVDY6
 Now your turn: what's the best sci-fi thriller you read this year?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-Title: The Quiet Frequency: Sci-Fi Thriller Book by Jules Rooke
+What's the best sci-fi thriller you read this year? 👇
 
-Description: Looking for a character-driven science fiction thriller? A burned-out spy, a duct-taped android and a dying alien mind collide on the foggy Oregon coast. Wry first-contact sci-fi with real heart. The end of the world sounds like a whisper. Save to your sci-fi reading list. #SciFiThriller #FirstContact #BookRecommendations
+Throwing mine in the ring: a burned-out spy, a duct-taped butler android, and a dying alien mind blacking out the grid.
+The Quiet Frequency by Jules Rooke. The end of the world sounds like a whisper.
+Dry humor, real heartbreak, one week of fog and storm.
+Link in bio. Now drop your pick in the comments 🛸
+
+#BookTok #SciFiBooks #SciFiThriller #FirstContact #BookRecommendations
 ```
-

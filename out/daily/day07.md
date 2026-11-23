@@ -40,13 +40,6 @@ If you like wry, character-driven first-contact sci-fi and burned-out-spy thrill
 Now your turn: what's the best sci-fi thriller you read this year?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-Title: The Quiet Frequency: Sci-Fi Thriller Book About a Burned-Out Spy
-
-Description: Looking for your next science fiction thriller? In The Quiet Frequency by Jules Rooke, a retired spy, a loyal dog, and a duct-taped android answer a dying alien signal on the foggy Oregon coast. Wry first-contact sci-fi with spy-thriller tension. Save to your sci-fi reading list. https://www.amazon.com/dp/B0HS8PVDY6
-```
-
 ## email — manual — ready
 ```
 Subject: What's the best science fiction thriller you read this year?
@@ -94,4 +87,17 @@ Your turn: what's the best science fiction thriller you read this year? Reply an
 Until then, keep your signal strong.
 
 Jules Rooke
+```
+
+## tiktok — auto (Buffer) — ready
+```
+What's the best sci-fi thriller you read this year? 👀
+
+Here's one for your list: a burned-out spy, a duct-taped butler android, and a dying alien mind made of light.
+The Quiet Frequency by Jules Rooke. The end of the world sounds like a whisper.
+Dry humor, real heartbreak, and a Malinois with a bad hip who'll never admit it hurts. 🐕
+
+Drop your pick below 👇 Link in bio.
+
+#BookTok #SciFiThriller #FirstContact #SciFiBooks
 ```

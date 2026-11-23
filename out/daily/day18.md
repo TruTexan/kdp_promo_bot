@@ -45,13 +45,6 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's the last book that kept you up way past your bedtime?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-Title: The Quiet Frequency: Sci-Fi Thriller Early Readers Finish in One Sitting
-
-Description: A retired spy, a duct-taped android, and a dying alien mind made of living light. Jules Rooke's science fiction thriller is a wry, atmospheric first-contact story set over one week of fog and storm on the Oregon coast. Early readers are finishing it in one sitting. For fans of burned-out spy thrillers and character-driven sci-fi.
-```
-
 ## blog — manual — ready
 ```
 # Why Early Readers Are Finishing The Quiet Frequency in One Sitting
@@ -85,4 +78,17 @@ If you like character-driven, wry first-contact science fiction or burned-out-sp
 ## Start Listening
 
 *The Quiet Frequency* by Jules Rooke is available now on Amazon: https://www.amazon.com/dp/B0HS8PVDY6
+```
+
+## tiktok — auto (Buffer) — ready
+```
+Early readers are finishing The Quiet Frequency in one sitting. 🌫️📻
+
+A dying alien mind. A burned-out spy. One last signal.
+Plus a duct-taped butler android who steeps tea he can't drink.
+The end of the world sounds like a whisper.
+
+Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller
 ```

@@ -42,10 +42,19 @@ The Quiet Frequency by Jules Rooke: https://www.amazon.com/dp/B0HS8PVDY6
 What's your favorite weather for reading a moody sci-fi story: fog, rain, or a full storm?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: A Fog-Bound First Contact Sci-Fi Thriller
+The fog comes in off the Pacific the way it always does, without asking. 🌫️
 
-A dying alien mind. A burned-out spy. One last signal. Jules Rooke's science fiction thriller follows a retired spy on the foggy Oregon coast, his duct-taped android butler, and a colony of living light calling for help. Wry, atmospheric, character-driven first contact. Perfect for fans of spy thrillers and alien signal stories. Find it on Amazon.
+Retired spy. Duct-taped android. One very stoic dog with a bad hip.
+
+Then every machine they own starts pulsing to the same rhythm.
+
+It's a dying alien mind calling for help, and the only person who can answer is the woman he left behind.
+
+The Quiet Frequency by Jules Rooke: wry first-contact sci-fi with real heartbreak underneath. 📡
+
+Link in bio.
+
+#BookTok #SciFiThriller #FirstContact #SciFiBooks #BookRecommendations
 ```
-

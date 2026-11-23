@@ -92,14 +92,14 @@
     "extra_platforms": [],
     "reddit_weekday": 2,
     "post_times": {
+      "tiktok": "19:00",
       "reels": "12:00",
-      "facebook": "13:00",
-      "pinterest": "20:00"
+      "facebook": "13:00"
     },
     "daily_platforms": [
+      "tiktok",
       "reels",
-      "facebook",
-      "pinterest"
+      "facebook"
     ]
   },
   "brand": {
@@ -110,9 +110,9 @@
   },
   "buffer": {
     "webhooks": {
+      "tiktok": "BUFFER_WEBHOOK_TIKTOK",
       "reels": "BUFFER_WEBHOOK_REELS",
-      "facebook": "BUFFER_WEBHOOK_FACEBOOK",
-      "pinterest": "BUFFER_WEBHOOK_PINTEREST"
+      "facebook": "BUFFER_WEBHOOK_FACEBOOK"
     }
   },
   "hubspot": {
@@ -123,5 +123,5 @@
   "setting": "Cape Sorrow, a decommissioned NOAA weather station at the end of four miles of cracked road above Port Halloran on the fog-bound Oregon coast; a sealed Cold War listening bunker; the Eugene observatory. The story runs over one week of fog and storm.",
   "tone": "First-person, present tense, dry humor under real heartbreak. Sebastion's deadpan butler wit balances Slade's guilt. Quiet and atmospheric, then a thriller once the feds arrive.",
   "spoiler_guard": "Never reveal: what happened on the Lisbon rooftop, the truth about Anton Kessler (Slade's handler, believed dead), Dana Okafor's role, who betrays whom in the observatory, what happens during the Surge, or the ending. Use only material from Chapters 1–7 and the back cover.",
-  "image_base_url": ""
+  "image_base_url": "https://raw.githubusercontent.com/TruTexan/kdp_promo_bot/main/out/images"
 }

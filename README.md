@@ -55,10 +55,12 @@ Keys live in `.env` (loaded automatically by `llm.py`; already in `.gitignore`).
 add the same value as a repository secret named `ANTHROPIC_API_KEY`.
 
 ## Posting setup (current)
-Platforms: Instagram (4:5 image + caption; the Reel script is included for filming by hand), Facebook Page, Pinterest.
-- `image_base_url` in book.json = public link to `out/images` (GitHub raw link, see the setup guide).
+Platforms posted automatically: TikTok (9:16 JPG photo post + caption), Instagram (4:5 image + caption; the Reel
+script is included for filming by hand), Facebook Page. Pinterest and X are off; turn one on later with
+`python growth.py add-platform x` and a fourth Zap (Buffer's free plan holds 3 channels).
+- `image_base_url` in book.json = https://raw.githubusercontent.com/TruTexan/kdp_promo_bot/main/out/images
 - One Zapier "Catch Hook → Add to Buffer" Zap per platform; hook URLs go in `.env` as
-  BUFFER_WEBHOOK_REELS / BUFFER_WEBHOOK_FACEBOOK / BUFFER_WEBHOOK_PINTEREST (and as GitHub secrets).
-- Fields sent to Zapier: caption, title (Pinterest), image_url, link, reel_script.
+  BUFFER_WEBHOOK_TIKTOK / BUFFER_WEBHOOK_REELS / BUFFER_WEBHOOK_FACEBOOK (and as GitHub secrets).
+- Fields sent to Zapier: caption, image_url, link, title, reel_script.
 - `python growth.py reschedule YYYY-MM-DD` moves the plan; `python growth.py status` shows its dates.
 - Windows daily run without GitHub: `run_daily.bat` in Task Scheduler.

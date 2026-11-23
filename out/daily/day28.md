@@ -42,13 +42,6 @@ The Quiet Frequency by Jules Rooke: https://www.amazon.com/dp/B0HS8PVDY6
 What's the last book you couldn't put down until the final page?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-Title: The Quiet Frequency: Sci-Fi Thriller Early Readers Finish in One Sitting
-
-Description: A retired spy, a duct-taped android, a bad-hip Malinois, and a dying alien colony of living light blacking out the grid. Character-driven first-contact science fiction thriller with dry humor and real heart. For fans of wry sci-fi and burned-out-spy stories. Early readers say it's a one-sitting read. Find it on Amazon.
-```
-
 ## email — manual — ready
 ```
 Subject: Early readers are finishing The Quiet Frequency in one sitting
@@ -95,4 +88,14 @@ Thanks for reading, and for being here.
 Jules Rooke
 
 P.S. Sebastion would like it noted that the tea is for "atmosphere."
+```
+
+## tiktok — auto (Buffer) — ready
+```
+POV: you start a book at 11pm and don't put it down until the last page.
+Early readers are finishing The Quiet Frequency in one sitting.
+A burned-out spy. A duct-taped android who steeps tea he can't drink. A dying alien mind blacking out the grid.
+Dry humor, real heartbreak, one week of fog and storm.
+Link in bio.
+#BookTok #SciFiThriller #FirstContact #SciFiBooks
 ```

@@ -45,10 +45,17 @@ Get it here: https://www.amazon.com/dp/B0HS8PVDY6
 What's the strangest thing you've caught yourself checking first thing in the morning?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: A Sci-Fi Thriller About a Burned-Out Spy
+The first thing I do every morning is check whether the world has ended. 🌫️
 
-Science fiction thriller with first contact, a retired spy, a duct-taped android, and a dying alien mind calling from the sky. Atmospheric Oregon coast setting, dry humor, and a storm closing in. Perfect for readers of character-driven sci-fi and spy thrillers. By Jules Rooke. #SciFiThriller #FirstContact #SciFiBooks
+It hasn't. It's only gotten stranger, a distinction I used to get paid to make.
+
+POV: you're a burned-out spy hiding at a dead weather station with a grumpy dog and a duct-taped butler robot, and every machine you own starts pulsing to the same rhythm.
+
+The Quiet Frequency by Jules Rooke: the end of the world sounds like a whisper.
+
+Wry first-contact sci-fi with real heartbreak underneath. Link in bio.
+
+#BookTok #SciFiBooks #SciFiThriller #FirstContact #BookRecommendations
 ```
-

@@ -20,6 +20,8 @@ Commands:
   python growth.py daily [--live]         # what cron/GitHub Actions runs every morning
   python growth.py reschedule 2026-12-01  # move the plan so day 1 is that date
   python growth.py status                 # show the plan's first/last day
+  python growth.py add-platform x         # write posts for one more platform into the current plan
+  python growth.py drop-platform pinterest
 
 Everything passes promo_bot.compliance() first; blocked items are never queued.
 """
@@ -42,7 +44,7 @@ import llm
 # Platforms: the 10 repurposing targets. Auto = Buffer can schedule it.
 # ---------------------------------------------------------------------------
 PLATFORMS = {
-    "tiktok":    {"auto": True,  "limit": 2200, "fmt": "15–30s video script: on-screen hook in first 2s, 3 beats, CTA 'link in bio'"},
+    "tiktok":    {"auto": True,  "limit": 2200, "fmt": "TikTok PHOTO post caption (it goes under an image card, not a video): hook as the first line, 2–4 short lines in a BookTok voice, CTA 'link in bio', then 3–5 hashtags including #BookTok"},
     "reels":     {"auto": True,  "limit": 2200, "fmt": "Instagram Reel script + caption, hook first line, 3–5 hashtags"},
     "facebook":  {"auto": True,  "limit": 1500, "fmt": "conversational Facebook post ending in a question"},
     "pinterest": {"auto": True,  "limit": 500,  "fmt": "Pin title (≤100 chars) + keyword-rich description (≤500 chars)"},
@@ -107,8 +109,7 @@ def template_post(book: dict, platform: str, seed: str, tags: list[str]) -> str:
     link, t4 = store_link(book), " ".join(tags[:4])
     T = book["title"]
     return {
-        "tiktok": f"[ON SCREEN, 0–2s] {seed}\n[BEAT 1] Show the cover.\n[BEAT 2] Read one line aloud.\n"
-                  f"[BEAT 3] '{book['audience']}, this one's for you.'\n[CTA] {T} — link in bio.\nCaption: {seed[:120]} {t4}",
+        "tiktok": f"{seed}\n\n{T} by {book['author']}. {book.get('tagline', '')}\nLink in bio.\n\n{t4}",
         "reels": f"{seed}\n\n{T} by {book['author']}. Link in bio.\n\n{t4}",
         "facebook": f"{seed}\n\nThat's the heart of {T}. {link}\n\n{seed_for(book, 'question', 0)}",
         "pinterest": f"TITLE: {T} — {book.get('genre', '')} for {book['audience'][:40]}\n"
@@ -198,7 +199,7 @@ def plan30(book: dict) -> list[dict]:
             for f in item["review_flags"]:
                 md.append(f"> review: {f}")
             queue.append({"date": day.isoformat(), "time": g.get("post_times", {}).get(p, "18:00"),
-                          "platform": p, "pillar": key, "image": f"out/images/{key}_{p}.png"
+                          "platform": p, "pillar": key, "image": f"out/images/{key}_{p}.{'jpg' if p == 'tiktok' else 'png'}"
                           if p in ("pinterest", "reels", "tiktok", "facebook") else "", **item})
         (OUT / "daily" / f"day{n+1:02d}.md").write_text("\n\n".join(md) + "\n")
     (OUT / "queue.json").write_text(json.dumps(queue, indent=2, ensure_ascii=False))
@@ -217,7 +218,7 @@ def plan30(book: dict) -> list[dict]:
 # ---------------------------------------------------------------------------
 # Images: local cards (free, no account) + Canva Bulk Create CSV
 # ---------------------------------------------------------------------------
-SIZES = {"reels": (1080, 1350), "pinterest": (1000, 1500),
+SIZES = {"tiktok": (1080, 1920), "reels": (1080, 1350), "pinterest": (1000, 1500),
          "facebook": (1080, 1080)}
 
 
@@ -294,7 +295,10 @@ def images(book: dict) -> None:
                     dr.text(((W - dr.textlength(sub, font=fb)) / 2, y), sub, font=fb,
                             fill=accent if line == r["cta"] else fg)
                     y += int(fs * 0.9)
-            img.save(OUT / "images" / f"{r['pillar']}_{p}.png")
+            if p == "tiktok":  # TikTok photo posts take JPEG/WebP, not PNG
+                img.save(OUT / "images" / f"{r['pillar']}_{p}.jpg", quality=92)
+            else:
+                img.save(OUT / "images" / f"{r['pillar']}_{p}.png")
             count += 1
     print(f"images: {count} cards -> out/images/ ; Canva Bulk Create data -> out/canva_bulk.csv"
           + ("" if cover.exists() else " (add cover.jpg next to book.json to include your cover)"))
@@ -359,7 +363,7 @@ def payload_for(book: dict, x: dict) -> dict:
     """What Zapier receives: ready-to-map fields for Buffer's 'Add to Buffer' action."""
     text, plat = x["text"], x["platform"]
     caption, title, script = text, "", ""
-    if plat == "reels":
+    if plat in ("reels", "tiktok"):
         caption = _section(text, "CAPTION") or text
         script = text.split("CAPTION")[0].strip() if "CAPTION" in text else ""
     elif plat == "pinterest":
@@ -394,7 +398,7 @@ def publish(book: dict, live: bool, today: dt.date) -> None:
             print(f"[manual] {x['platform']}: copy today's draft from out/daily/ and post it yourself")
             continue
         body, url = payload_for(book, x), _hook_url(book, x["platform"])
-        if x["platform"] in ("reels", "pinterest") and not body["image_url"]:
+        if x["platform"] in ("reels", "pinterest", "tiktok") and not body["image_url"]:
             print(f"  warning: {x['platform']} needs an image — set image_base_url in book.json")
         if not live or not url:
             why = "" if live else "[dry-run] "
@@ -435,6 +439,50 @@ def reschedule(start: dt.date) -> None:
     print(f"reschedule: day 1 = {start}, day {len(old)} = {start + dt.timedelta(days=len(old) - 1)}")
 
 
+def add_platform(book: dict, plat: str) -> None:
+    """Write posts for one more platform into every day of the current plan."""
+    p = OUT / "queue.json"
+    q = json.loads(p.read_text())
+    dates = sorted({x["date"] for x in q})
+    q = [x for x in q if x["platform"] != plat]
+    g = book.get("growth", {})
+    for n, day in enumerate(dates):
+        pillar = next(x["pillar"] for x in q if x["date"] == day)
+        seed = seed_for(book, pillar, n // len(PILLARS))
+        item = repurpose(book, seed, [plat])[plat]
+        q.append({"date": day, "time": g.get("post_times", {}).get(plat, "18:00"), "platform": plat,
+                  "pillar": pillar, "image": f"out/images/{pillar}_{plat}.{'jpg' if plat == 'tiktok' else 'png'}"
+                  if plat in SIZES else "", **item})
+        f = OUT / "daily" / f"day{n+1:02d}.md"
+        if f.exists():
+            t = re.sub(rf"\n## {plat} — .*?```\n.*?```\n*", "\n", f.read_text(), flags=re.S)
+            mode = "auto (Buffer)" if item["auto"] else "manual"
+            f.write_text(t.rstrip() + f"\n\n## {plat} — {mode} — {item['status']}\n```\n{item['text']}\n```\n")
+        print(f"  day {n+1:2d} {day}: {plat} {item['source']}")
+    q.sort(key=lambda x: (x["date"], x["platform"]))
+    p.write_text(json.dumps(q, indent=2, ensure_ascii=False))
+    _write_buffer_csv(q)
+
+
+def drop_platform(plat: str) -> None:
+    p = OUT / "queue.json"
+    q = [x for x in json.loads(p.read_text()) if x["platform"] != plat]
+    p.write_text(json.dumps(q, indent=2, ensure_ascii=False))
+    for f in (OUT / "daily").glob("day*.md"):
+        f.write_text(re.sub(rf"## {plat} — .*?```\n.*?```\n*", "", f.read_text(), flags=re.S))
+    _write_buffer_csv(q)
+    print(f"drop-platform: removed {plat}; {len(q)} posts left")
+
+
+def _write_buffer_csv(q: list) -> None:
+    with open(OUT / "buffer_queue.csv", "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f)
+        w.writerow(["date", "time", "platform", "text", "image", "status"])
+        for x in q:
+            if x["auto"]:
+                w.writerow([x["date"], x["time"], x["platform"], x["text"], x["image"], x["status"]])
+
+
 def status() -> None:
     q = json.loads((OUT / "queue.json").read_text())
     dates = sorted({x["date"] for x in q})
@@ -448,7 +496,7 @@ def status() -> None:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     ap.add_argument("cmd", choices=["plan30", "repurpose", "images", "blog", "hubspot", "publish",
-                                    "daily", "reschedule", "status"])
+                                    "daily", "reschedule", "status", "add-platform", "drop-platform"])
     ap.add_argument("text", nargs="?")
     ap.add_argument("--book", default=str(HERE / "book.json"))
     ap.add_argument("--live", action="store_true")
@@ -476,6 +524,10 @@ def main() -> None:
         if not a.text:
             sys.exit("Usage: python growth.py reschedule YYYY-MM-DD")
         reschedule(dt.date.fromisoformat(a.text))
+    elif a.cmd == "add-platform":
+        add_platform(book, a.text)
+    elif a.cmd == "drop-platform":
+        drop_platform(a.text)
     elif a.cmd == "status":
         status()
     elif a.cmd == "daily":

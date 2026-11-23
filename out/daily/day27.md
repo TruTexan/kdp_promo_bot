@@ -36,13 +36,6 @@ You can find it here: https://www.amazon.com/dp/B0HS8PVDY6
 Now your turn: what's the best science fiction thriller you read this year?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-Title: Sci-Fi Thriller Reading List: The Quiet Frequency, a First Contact Spy Novel
-
-Description: Looking for your next science fiction thriller? The Quiet Frequency by Jules Rooke follows a burned-out retired spy, his loyal dog, and a duct-taped android as a dying alien mind blacks out the grid. Wry, atmospheric first contact with heart. Great for fans of character-driven sci-fi and spy thrillers. Save to your TBR.
-```
-
 ## reddit — manual — ready
 ```
 Title: What's the best science fiction thriller you read this year? I'm especially curious about quieter, character-driven ones
@@ -68,4 +61,19 @@ Bonus round: what's the best sidekick you've come across, human, animal, or mach
 Full disclosure, since it's relevant: I'm an author, and I recently published a sci-fi thriller in this vein (a burned-out retired spy, a duct-taped android butler, and a dying alien intelligence knocking out the power grid on the Oregon coast). I'm not here to pitch it. I'm genuinely after reading recommendations, and I'm happy to share the title if anyone asks or if the mods say it's okay.
 
 Looking forward to adding some of your picks to my list. Tell me what I should read next.
+```
+
+## tiktok — auto (Buffer) — ready
+```
+What's the best sci-fi thriller you read this year? 👀
+
+Mine has a burned-out spy, a duct-taped butler android, and a dying alien made of light.
+
+The end of the world sounds like a whisper. 🌫️
+
+The Quiet Frequency by Jules Rooke: dry humor, real heartbreak, one week of fog and storm.
+
+Drop your pick below. Link in bio.
+
+#BookTok #SciFiBooks #SciFiThriller #FirstContact #BookRecommendations
 ```

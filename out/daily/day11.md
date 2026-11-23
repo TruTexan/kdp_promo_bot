@@ -52,13 +52,6 @@ https://www.amazon.com/dp/B0HS8PVDY6
 If you could have one sidekick in a crisis, a loyal old dog or a deadpan butler robot, which would you pick?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-Title: The Quiet Frequency: A Sci-Fi Thriller About a Spy and a Dying Alien Mind
-
-Description: Science fiction thriller by Jules Rooke. A burned-out spy, a duct-taped android, and a dying colony of living light on the foggy Oregon coast. Wry, atmospheric first-contact sci-fi with a retired-spy twist. For fans of character-driven sci-fi books. https://www.amazon.com/dp/B0HS8PVDY6
-```
-
 ## blog — manual — ready
 ```
 The end of the world sounds like a whisper.
@@ -92,4 +85,19 @@ If you like character-driven, wry first-contact sci-fi and burned-out-spy thrill
 ## Start Listening
 
 The signal is already broadcasting. [Find *The Quiet Frequency* on Amazon](https://www.amazon.com/dp/B0HS8PVDY6).
+```
+
+## tiktok — auto (Buffer) — ready
+```
+A dying alien mind. A burned-out spy. One last signal. 📡
+
+POV: you retired to a dead weather station on the Oregon coast to disappear.
+Then every machine you own starts pulsing to the same rhythm.
+Your only help is a duct-taped butler robot, a Malinois with a bad hip, and the woman you left behind.
+
+Wry first-contact sci-fi with real heartbreak. The end of the world sounds like a whisper. 🌫️
+
+The Quiet Frequency by Jules Rooke. Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller #BookRecommendations
 ```

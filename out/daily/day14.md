@@ -45,13 +45,6 @@ Get it here: https://www.amazon.com/dp/B0HS8PVDY6
 What's the best first-contact story you've ever read?
 ```
 
-## pinterest — auto (Buffer) — ready
-```
-The Quiet Frequency: A First-Contact Sci-Fi Thriller
-
-Character-driven science fiction thriller for fans of Project Hail Mary and Slow Horses. A burned-out spy, a duct-taped android and a loyal dog answer a dying alien colony of living light. First contact, found family, second chances. By Jules Rooke.
-```
-
 ## email — manual — ready
 ```
 Subject: A spy, a duct-taped android, and a voice in the static
@@ -94,4 +87,14 @@ Jules Rooke
 P.S. Hit reply and tell me: if a lonely voice from the sky called out, would you answer? I read every response.
 
 #SciFiThriller #FirstContact #NewRelease
+```
+
+## tiktok — auto (Buffer) — ready
+```
+Project Hail Mary + Slow Horses fans, this one's for you 🎧
+A burned-out spy hiding on the foggy Oregon coast. A duct-taped android butler. A Malinois with a bad hip who'll never admit it hurts.
+Then every machine they own starts pulsing to the same rhythm. It's a dying alien voice, and it's asking for help.
+First contact, second chances, and the courage to stay.
+The Quiet Frequency by Jules Rooke. Link in bio.
+#BookTok #SciFiThriller #FirstContact #SciFiBooks
 ```

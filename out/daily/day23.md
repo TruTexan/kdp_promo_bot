@@ -39,10 +39,17 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's the best dog sidekick you've ever met in a book?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-The Quiet Frequency: A Sci-Fi Thriller With a Very Good Dog
+Cipher is an eight-year-old Malinois with a federal tattoo and a bad hip from Kandahar. He will never admit it hurts. 🐕
 
-Meet Cipher, an eight-year-old Malinois with a federal tattoo, a bad hip from Kandahar, and no plans to admit it hurts. Science fiction thriller by Jules Rooke: a burned-out spy, a duct-taped android, and a dying alien mind of living light. Character-driven first contact on the foggy Oregon coast.
+He's the best-trained dog on the Oregon coast, and the most stubborn.
+He lives at a dead weather station with a retired spy and a duct-taped butler robot.
+Then every machine they own starts pulsing to the same rhythm.
+
+The Quiet Frequency by Jules Rooke: dry humor, real heartbreak, and first contact that sounds like a whisper.
+
+Link in bio.
+
+#BookTok #SciFiBooks #SciFiThriller #FirstContact #BookRecommendations
 ```
-

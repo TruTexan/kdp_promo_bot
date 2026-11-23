@@ -40,10 +40,15 @@ https://www.amazon.com/dp/B0HS8PVDY6
 What's the last story that made you care more about the people than the plot?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-Why I Wrote The Quiet Frequency: A Sci-Fi Thriller About Staying
+I wrote The Quiet Frequency because the end of the world doesn't have to be loud.
 
-A burned-out spy, a duct-taped android and a dying alien mind made of living light. The Quiet Frequency is a character-driven first-contact science fiction thriller set on the foggy Oregon coast. For fans of wry sci-fi and retired-spy stories. https://www.amazon.com/dp/B0HS8PVDY6
+What if first contact isn't an invasion, just a dying voice asking for help?
+And the only ones listening are a burned-out spy, a duct-taped android who steeps tea he can't drink, and a dog with a bad hip.
+It's wry, foggy, and heartbreaking, and the hardest part for Slade is staying.
+
+Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller
 ```
-

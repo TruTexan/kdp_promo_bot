@@ -43,10 +43,19 @@ https://www.amazon.com/dp/B0HS8PVDY6
 If a dying alien voice called out to you, would you answer, or pretend you didn't hear it?
 ```
 
-## pinterest — auto (Buffer) — ready
+## tiktok — auto (Buffer) — ready
 ```
-Title: The Quiet Frequency: A Sci-Fi Thriller About a Burned-Out Spy and a Dying Alien Mind
+A dying alien mind. A burned-out spy. One last signal. 📡
 
-Description: Science fiction thriller for fans of first contact and burned-out spy stories. Retired spy Slade Quintz hides on the foggy Oregon coast with his dog and a duct-taped android until a dying colony of living light starts blacking out the grid. Wry, atmospheric, heartfelt. By Jules Rooke.
+POV: you're a retired spy hiding at a dead weather station on the foggy Oregon coast, and every machine you own starts pulsing to the same rhythm.
+
+It's a voice. A colony of living light, begging for help.
+
+His crew: a Malinois with a bad hip, and a duct-taped android who steeps tea he can't drink. 🫖
+
+The Quiet Frequency by Jules Rooke: wry first-contact sci-fi with real heartbreak underneath.
+
+Link in bio.
+
+#BookTok #SciFiBooks #FirstContact #SciFiThriller #BookRecommendations
 ```
-
