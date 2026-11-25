@@ -446,20 +446,26 @@ def buffer_create(book: dict, plat: str, channel_id: str, body: dict) -> str:
     return (res.get("post") or {}).get("dueAt") or "queued"
 
 
-def publish(book: dict, live: bool, today: dt.date) -> None:
+def publish(book: dict, live: bool, today: dt.date) -> int:
     p = OUT / "queue.json"
     if not p.exists():
         sys.exit("No queue — run `plan30` first.")
     q = json.loads(p.read_text())
     due = [x for x in q if x["date"] == today.isoformat() and x["status"] == "ready"]
     use_api = bool(os.environ.get("BUFFER_API_KEY", "").strip())
+    failed = 0
+    if live and not use_api and not any(_hook_url(book, x["platform"]) for x in due if x["auto"]) \
+            and any(x["auto"] for x in due):
+        print("ERROR: BUFFER_API_KEY is empty, so nothing can reach Buffer. "
+              "On GitHub: Settings > Secrets and variables > Actions > add BUFFER_API_KEY.")
+        return sum(1 for x in due if x["auto"])
     channels: dict[str, str] = {}
     if use_api and live and any(x["auto"] for x in due):
         try:
             channels = buffer_channels()
         except Exception as ex:
-            print(f"error: couldn't reach Buffer ({ex}). Check BUFFER_API_KEY.")
-            return
+            print(f"ERROR: couldn't reach Buffer ({ex}). Check the BUFFER_API_KEY secret.")
+            return sum(1 for x in due if x["auto"])
     for x in due:
         if not x["auto"]:
             print(f"[manual] {x['platform']}: copy today's draft from out/daily/ and post it yourself")
@@ -473,7 +479,8 @@ def publish(book: dict, live: bool, today: dt.date) -> None:
                       + (f"\n          image: {body['image_url']}" if body["image_url"] else ""))
                 continue
             if not cid:
-                print(f"  {x['platform']}: no {SERVICE.get(x['platform'])} channel connected in Buffer; skipped")
+                print(f"ERROR {x['platform']}: no {SERVICE.get(x['platform'])} channel connected in Buffer")
+                failed += 1
                 continue
             try:
                 when = buffer_create(book, x["platform"], cid, body)
@@ -481,12 +488,15 @@ def publish(book: dict, live: bool, today: dt.date) -> None:
                 print(f"added to Buffer: {x['platform']} ({when})")
             except Exception as ex:
                 x["status"], x["error"] = "error", str(ex)
-                print(f"error {x['platform']}: {ex}")
+                print(f"ERROR {x['platform']}: {ex}")
+                failed += 1
             continue
         if x["platform"] in ("reels", "pinterest", "tiktok") and not body["image_url"]:
             print(f"  warning: {x['platform']} needs an image — set image_base_url in book.json")
         if not live or not url:
             why = "" if live else "[dry-run] "
+            if live and not url:
+                failed += 1
             print(f"{why}{x['platform']:9} -> {body['caption'][:70]!r}"
                   + (f"\n          image: {body['image_url']}" if body["image_url"] else "")
                   + ("  (no webhook set for this platform)" if live and not url else ""))
@@ -499,11 +509,20 @@ def publish(book: dict, live: bool, today: dt.date) -> None:
             print(f"sent to Zapier -> Buffer: {x['platform']}")
         except Exception as ex:
             x["status"], x["error"] = "error", str(ex)
-            print(f"error {x['platform']}: {ex}")
+            print(f"ERROR {x['platform']}: {ex}")
+            failed += 1
     if live:
         p.write_text(json.dumps(q, indent=2, ensure_ascii=False))
     if not due:
-        print(f"publish: nothing scheduled for {today}. Run `python growth.py status` to see the plan's dates.")
+        done = [x for x in q if x["date"] == today.isoformat() and x["status"] == "queued"]
+        if done:
+            print(f"publish: today's {len(done)} posts are already in Buffer; nothing to do.")
+        else:
+            print(f"publish: nothing scheduled for {today}. Run `python growth.py status` to see the plan's dates.")
+    elif live:
+        sent = sum(1 for x in due if x["status"] == "queued")
+        print(f"publish: {sent} of {sum(1 for x in due if x['auto'])} posts for {today} are in Buffer.")
+    return failed
 
 
 def reschedule(start: dt.date) -> None:
@@ -627,8 +646,10 @@ def main() -> None:
         if not (OUT / "queue.json").exists():
             plan30(book)
             images(book)
-        publish(book, a.live, today)
-        hubspot(book, a.live)
+        failed = publish(book, a.live, today)
+        if a.live and failed:
+            print(f"daily: {failed} post(s) did not reach Buffer (see ERROR lines above).")
+            sys.exit(1)
 
 
 if __name__ == "__main__":
