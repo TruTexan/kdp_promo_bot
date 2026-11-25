@@ -423,7 +423,25 @@ def buffer_channels() -> dict[str, str]:
     return found
 
 
-def buffer_create(book: dict, plat: str, channel_id: str, body: dict) -> str:
+def _local_to_utc(day: dt.date, hhmm: str, tzname: str) -> dt.datetime:
+    """Local wall-clock time on `day` -> aware UTC datetime. Works on Windows without tzdata."""
+    h, m = (int(v) for v in hhmm.split(":"))
+    naive = dt.datetime(day.year, day.month, day.day, h, m)
+    try:
+        from zoneinfo import ZoneInfo
+        return naive.replace(tzinfo=ZoneInfo(tzname)).astimezone(dt.timezone.utc)
+    except Exception:
+        # US rule fallback (Central by default): DST from 2nd Sunday of March to 1st Sunday of November
+        std = {"America/Chicago": -6, "America/New_York": -5, "America/Denver": -7,
+               "America/Los_Angeles": -8}.get(tzname, -6)
+        mar = dt.date(day.year, 3, 8); mar += dt.timedelta(days=(6 - mar.weekday()) % 7)
+        nov = dt.date(day.year, 11, 1); nov += dt.timedelta(days=(6 - nov.weekday()) % 7)
+        off = std + (1 if mar <= day < nov else 0)
+        return (naive - dt.timedelta(hours=off)).replace(tzinfo=dt.timezone.utc)
+
+
+def buffer_create(book: dict, plat: str, channel_id: str, body: dict,
+                  when: dt.datetime | None = None) -> str:
     meta = {}
     if plat == "reels":
         meta = {"instagram": {"type": "post", "shouldShareToFeed": True}}
@@ -434,8 +452,10 @@ def buffer_create(book: dict, plat: str, channel_id: str, body: dict) -> str:
     elif plat == "pinterest":
         meta = {"pinterest": {"title": body["title"][:100], "url": body["link"]}}
     inp = {"text": body["caption"], "channelId": channel_id, "schedulingType": "automatic",
-           "mode": "addToQueue", "needsApproval": False,
+           "mode": "customScheduled" if when else "shareNow", "needsApproval": False,
            "assets": [{"image": {"url": body["image_url"]}}] if body["image_url"] else []}
+    if when:
+        inp["dueAt"] = when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
     if meta:
         inp["metadata"] = meta
     res = _gql("""mutation($input: CreatePostInput!) { createPost(input: $input) {
@@ -451,8 +471,19 @@ def publish(book: dict, live: bool, today: dt.date) -> int:
     if not p.exists():
         sys.exit("No queue — run `plan30` first.")
     q = json.loads(p.read_text())
-    due = [x for x in q if x["date"] == today.isoformat() and x["status"] == "ready"]
     use_api = bool(os.environ.get("BUFFER_API_KEY", "").strip())
+    g = book.get("growth", {})
+    tzname = g.get("timezone", "America/Chicago")
+    # With the Buffer API, each run also schedules the next `lead_days` days at their exact
+    # times, so a late or skipped GitHub run can't push posts off schedule.
+    lead = int(g.get("lead_days", 1)) if use_api else 0
+    window = {(today + dt.timedelta(days=i)).isoformat() for i in range(lead + 1)}
+    due = [x for x in q if x["status"] == "ready" and
+           ((x["auto"] and x["date"] in window) or (not x["auto"] and x["date"] == today.isoformat()))]
+    due.sort(key=lambda x: (x["date"], x["platform"]))
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    if os.environ.get("PROMO_NOW"):  # testing hook: pretend it's this UTC time
+        now_utc = dt.datetime.fromisoformat(os.environ["PROMO_NOW"]).replace(tzinfo=dt.timezone.utc)
     failed = 0
     if live and not use_api and not any(_hook_url(book, x["platform"]) for x in due if x["auto"]) \
             and any(x["auto"] for x in due):
@@ -474,8 +505,14 @@ def publish(book: dict, live: bool, today: dt.date) -> int:
         if use_api:
             cid = book.get("buffer", {}).get("channel_ids", {}).get(x["platform"]) \
                 or channels.get(SERVICE.get(x["platform"], x["platform"]), "")
+            day = dt.date.fromisoformat(x["date"])
+            hhmm = g.get("post_times", {}).get(x["platform"], x.get("time", "18:00"))
+            when = _local_to_utc(day, hhmm, tzname)
+            if when <= now_utc + dt.timedelta(minutes=5):
+                when = None  # its time today has passed: post right away
+            label = f"{x['date']} {hhmm}" if when else "now (its time has passed)"
             if not live:
-                print(f"[dry-run] {x['platform']:9} -> Buffer API  {body['caption'][:60]!r}"
+                print(f"[dry-run] {x['platform']:9} {label:26} {body['caption'][:50]!r}"
                       + (f"\n          image: {body['image_url']}" if body["image_url"] else ""))
                 continue
             if not cid:
@@ -483,9 +520,9 @@ def publish(book: dict, live: bool, today: dt.date) -> int:
                 failed += 1
                 continue
             try:
-                when = buffer_create(book, x["platform"], cid, body)
+                buffer_create(book, x["platform"], cid, body, when)
                 x["status"] = "queued"
-                print(f"added to Buffer: {x['platform']} ({when})")
+                print(f"added to Buffer: {x['platform']:9} for {label}")
             except Exception as ex:
                 x["status"], x["error"] = "error", str(ex)
                 print(f"ERROR {x['platform']}: {ex}")
@@ -513,15 +550,16 @@ def publish(book: dict, live: bool, today: dt.date) -> int:
             failed += 1
     if live:
         p.write_text(json.dumps(q, indent=2, ensure_ascii=False))
-    if not due:
-        done = [x for x in q if x["date"] == today.isoformat() and x["status"] == "queued"]
+    auto_due = [x for x in due if x["auto"]]
+    if not auto_due:
+        done = [x for x in q if x["date"] in window and x["status"] == "queued"]
         if done:
-            print(f"publish: today's {len(done)} posts are already in Buffer; nothing to do.")
+            print(f"publish: all {len(done)} posts for {', '.join(sorted(window))} are already in Buffer; nothing to do.")
         else:
             print(f"publish: nothing scheduled for {today}. Run `python growth.py status` to see the plan's dates.")
     elif live:
         sent = sum(1 for x in due if x["status"] == "queued")
-        print(f"publish: {sent} of {sum(1 for x in due if x['auto'])} posts for {today} are in Buffer.")
+        print(f"publish: {sent} of {len(auto_due)} posts for {', '.join(sorted({x['date'] for x in auto_due}))} are in Buffer.")
     return failed
 
 
